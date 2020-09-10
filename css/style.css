@@ -199,11 +199,11 @@ body main footer *:first-child + html .wrapper-cta {
 
 ::selection {
     color: white;
-    background: black;
+    background: blue;
 }
 
 body {
-    font-family: 'Arapey', serif;
+    font-family: 'Kufam', cursive;
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.02em;
@@ -232,16 +232,16 @@ body main .cta {
 body a {
     color: inherit;
     text-decoration: none;
-    color: #86E98F;
+    color: #ffff66;
 }
 
 body a span:not(emoji) {
     border-bottom: 2px solid;
-    border-color: inherit;
+    border-color: black;
 }
 
 body a.cta {
-    color: #86E98F;
+    color: #ffff66;
 }
 
 body p,
@@ -257,7 +257,7 @@ body h6 {
 body h1 {
     font-size: 1.4em;
     margin-bottom: 1em;
-    color: #86E98F;
+    color: #000000;
 }
 
 body p {
@@ -329,6 +329,7 @@ body #mainWrapper main::after {
     display: table;
 }
 
+
 @media (max-width: 940px) {
     body #mainWrapper main {
         width: 91.66667%;
@@ -340,7 +341,7 @@ body #mainWrapper main::after {
 --------------------------------------------------------------*/
 
 body {
-    background: rgb(55, 82, 55);
+    background: #c7831b;
 }
 
 body main {
@@ -349,7 +350,7 @@ body main {
 		border-radius: 15px;
 		box-shadow: 0 10px 45px rgba(0, 0, 0, .1);
 		*/
-    color: white;
+    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
