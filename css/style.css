@@ -232,7 +232,7 @@ body main .cta {
 body a {
     color: inherit;
     text-decoration: none;
-    color: #86E98F;
+    color: red;
 }
 
 body a span:not(emoji) {
@@ -241,7 +241,7 @@ body a span:not(emoji) {
 }
 
 body a.cta {
-    color: #86E98F;
+    color:blue;
 }
 
 body p,
@@ -340,7 +340,7 @@ body #mainWrapper main::after {
 --------------------------------------------------------------*/
 
 body {
-    background: rgb(55, 82, 55);
+    background: green;
 }
 
 body main {
