@@ -1,0 +1,506 @@
+/*--------------------------------------------------------------
+# reset
+--------------------------------------------------------------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -7px;
+}
+
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+
+.clearfix:after,
+body main footer .wrapper-cta:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix,
+* html body main footer .wrapper-cta,
+body main footer * html .wrapper-cta {
+    zoom: 1;
+}
+
+*:first-child + html .clearfix,
+*:first-child + html body main footer .wrapper-cta,
+body main footer *:first-child + html .wrapper-cta {
+    zoom: 1;
+}
+
+/*--------------------------------------------------------------
+# Site typography
+--------------------------------------------------------------*/
+
+::selection {
+    color: white;
+    background: black;
+}
+
+body {
+    font-family: 'Arapey', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+
+body .actionFont,
+body main .cta {
+    font-family: monospace;
+    font-size: 0.9em;
+    line-height: 1;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 720px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+body a {
+    color: inherit;
+    text-decoration: none;
+    color: #86E98F;
+}
+
+body a span:not(emoji) {
+    border-bottom: 2px solid;
+    border-color: inherit;
+}
+
+body a.cta {
+    color: #86E98F;
+}
+
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    margin-bottom: 1em;
+}
+
+body h1 {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: #86E98F;
+}
+
+body p {
+    font-size: 1.4em;
+}
+
+body .emoji {
+    border: 0;
+    font-size: 1.3em;
+}
+
+body .emoji.rock {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+body .emoji.mail {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+    margin-bottom: -3px;
+}
+
+body .emoji.alien {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+    margin-bottom: -2px;
+}
+
+body .emoji.phone {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+/*--------------------------------------------------------------
+# Site gridded
+--------------------------------------------------------------*/
+
+html,
+body {
+    height: 100%;
+}
+
+body #mainWrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: relative;
+}
+
+body #mainWrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+body #mainWrapper main {
+    width: 75%;
+    padding: 4em 8.33333%;
+}
+
+body #mainWrapper main::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+@media (max-width: 940px) {
+    body #mainWrapper main {
+        width: 91.66667%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Site layout
+--------------------------------------------------------------*/
+
+body {
+    background: blue;
+}
+
+body main {
+    /*
+		background: white;
+		border-radius: 15px;
+		box-shadow: 0 10px 45px rgba(0, 0, 0, .1);
+		*/
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*
+		.filter-mono {
+			background: $color-main;
+
+			img {
+				mix-blend-mode: screen;
+				-webkit-filter: grayscale(100%) contrast(100%);
+				filter: grayscale(100%) contrast(100%);
+				opacity: 1;
+			}
+		}
+		*/
+}
+
+@media (max-height: 790px) {
+    body main {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 1em auto;
+    }
+}
+
+body main header div {
+    width: 100px;
+    height: 100px;
+    margin-left: -24px;
+    margin-bottom: 3em;
+}
+
+@media (max-width: 480px) {
+    body main header div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+body main footer .wrapper-cta {
+    padding-top: 1em;
+    float: right;
+}
+
+body main footer .wrapper-cta a {
+    display: block;
+}
+
+body main .cta {
+    margin-bottom: 1em;
+}
+
+/*--------------------------------------------------------------
+# print stuff
+--------------------------------------------------------------*/
+
+/*** print styles */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: "(" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: "(" attr(title) ")";
+    }
+    /*     * Don't show links for images,or javascript/internal links     */
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+        /* h5bp.com/t */
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*!
+
+
+                                 __.--.._,-'""-.
+                              ,-' .' ,'  .-"''-.`.       .--.
+                            ,'    |  |  '`-.    \ \       `-.|
+                           /       .   /    `.   \ \        ||
+                          /         `..`.    `.   \ .       ||
+                         /        . .    `.    \   . .      '.
+                ."-.    .  ,""'-. | |      \    \   `.`.__,'.'
+                 `. `. .   |     `. |       \    .    `-..-'
+       _______     .  `|   |   '   .'        .   |...--._
+       `.     `"--.'   '    .      | .        .  |""''"-._"-._
+         `.             \    `-._..'. .       |  |---.._  `-.__"-..
+    -.     `.           |\           `.`      |  |'`-.  `-._   +"-'
+    `.`.     `-.        | `            .`.       | `. `.    `,"
+      `.`.      `.      |  '.           ` `      `.  \  `   /
+      | `.`.    __`.    |`/  `.     ...  `.`.     |   `.   .
+      |   \ .  `._      | `. / `. .'.' |   \ \    |     \  |
+      |.   ` \    `-.   |   \   .'.'/' |    \ \   |      ._'
+      | `.  `.\      `. |    \ / , '.  |_    . \  '-.
+     ,     .  .\       `|     . ' / |  | `-...\ \'   `._
+     `.     `.  \       |.    '/ .  |  |       ' .      `-.
+      .`._    \` \      | `. /'  '  |  |       | |       ,.'
+       .  `-.  \`.\    ,|   //  '   |  |__  .' | |      |
+       |     `._`| `--' `  //  .    |  '  `"  /| |   . -'
+       '        `|       `//   '    |   .    / | |   |
+      /....._____|       //   .  ___|   |   /  | |  ,|
+     .         _.'      /, _.--"'-._ `".| ,'   | |.'
+     |      _,' / ___   `-'.        `. _|'     |,
+     |  _,-"  ,'.'   `-.._  `.      _,'         `
+     '-"   _,','          "- ....--'
+    /  _.-"_.'
+   /_,'_,-'
+ .'_.-'
+ '"
+
+ */
